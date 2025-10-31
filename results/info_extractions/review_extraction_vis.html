@@ -1,0 +1,264 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+劇場版《鏈鋸人 蕾潔篇》6 大看點解析：動畫加戲、刻畫人性與虐戀、主題曲
+由米津玄師＆宇多田光夢幻聯動 
+劇場版《鏈鋸人 蕾潔篇》作者藤本樹盛讚，日本首映更中斷《鬼滅之刃 無限
+城篇》連續霸榜紀錄。MAPPA 高品質製作、吉原達矢×重次創太黃金組合，米
+津玄師＆宇多田光夢幻聯動！搭配戀愛時心跳加速的鼓動節奏，竟然是梗梗的
+鏈鋸聲。 
+by 美麗佳人編輯部-2025/10/01 更新 
+Text／彼夏琉羊 
+蕾潔是誰？劇情接續《鏈鋸人》第一部故事之後！ 
+在黑暗奇幻少年漫畫《鏈鋸人》粉絲之間擁有超高人氣的「蕾潔」，於原作《鏈
+鋸人》漫畫中的第40 話～52 話之間登場，短篇劇情被讀者譽為《鏈鋸人》當
+中最暖的篇章。 
+《鏈鋸人》故事背景設定為蘇聯尚未瓦解，在這個世界上充斥著被稱為「惡
+魔」的怪物，人們越是害怕的惡魔「名稱」，該惡魔的力量就越大。劇情描述為
+了還債和生計的主角 淀治，唯一夢想就是過上普通的生活；在與「鏈鋸惡魔」
+達成契約後，意外成為公安惡魔獵人。當淀治正融入特異四課的同伴們，並且
+準備討伐最強惡魔 鎗之惡魔時，《鏈鋸人 蕾潔篇》女主角 蕾潔突然出現，兩
+人之間的互動，撩動淀治青春少年的純真之心；不同於《鏈鋸人》女主角 真紀
+真的神秘與溫柔，蕾潔的可愛和主動為淀治的內心帶來了難以言喻的悸動。不
+料咖啡廳、泳池、浪漫花火⋯⋯淀治與蕾潔之間這段看似結合所有完美戀愛開
+端元素的戀情，事實上卻是極其殘酷的夏日瘋狂戀曲。 
+《鏈鋸人 蕾潔篇》六大看點： 
+推薦給想要入坑《鏈鋸人》的讀者，一次感受《鏈鋸人 蕾潔篇》究竟在火紅什
+麼？為什麼能夠中斷《鬼滅之刃劇場版 無限城篇》的霸榜紀錄？ 
+看點一：<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">MAPPA 品質保證</span> × 鬼才編劇 瀨古浩司，動畫加戲誠意太滿太過癮！ 
+MAPPA 出品，總是有一定的品質！眾多知名作品，其中即便不是熱衷的動畫
+迷，在近年也能知道一二的作品包含《進擊的巨人》《咒術迴戰》等。而編劇 
+瀨古浩司，其參與的動畫歷史多不勝數，自MAPPA 橫跨霸權社都有他的身影。
+參與之作品的好票房與熱度更是均不在話下！將漫畫文本衷於原作再細細補足
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+原創動畫內容，果真是魔鬼藏在細節裡！這次在《鏈鋸人 蕾潔篇》當中更是加
+戲滿滿、刪減到位，讓觀眾更貼近原著。近年引起熱議的《膽大黨》、新作
+《GACHIAKUTA》也是由瀨古浩司參與編劇。順帶一提，除了《鏈鋸人》之
+外，其他帶有「疼痛感」的動畫劇情，如《狂賭之淵》《平穩世代的韋駄天們》
+《海盜戰記》《亞人》等，有喜歡這些作品的讀者們，應該都有感受過瀨古浩司
+在動畫劇情上畫龍點睛又巧妙連貫的厲害之處！ 
+看點二：吉原達矢 × 重次創太，《咒術迴戰》動作監督 × 動作導演的黃金組
+合！ 
+本次《鏈鋸人 蕾潔篇》的導演，由同樣是《鏈鋸人 總集篇》的導演 吉原達矢 
+擔任。《鏈鋸人 總集篇》好評相當，這次再度全面掌舵，帶來更成熟的節奏
+感。而動作部分則由 重次創太 擔綱動作監督！重次創太有多麽擅長打鬥場
+面，由《咒術迴戰》便可知！漫畫裡打得精彩，動畫版更是打得如火如荼，重
+次創太的視角獨到、打擊感受拳拳到位，名場面只有更多沒有停留！爽感十足
+的分鏡動作視角，大大滿足觀眾視覺！ 
+重次創太本人也時常會在X（原推特）分享製作的動作分鏡畫面呢。知名作品
+還有《怪獸8 號》《航海王》《我的英雄學院》《刀劍神域外傳Gun Gale 
+Online》等，而在本作劇場版《鏈鋸人 蕾潔篇》之中，就連作者藤本樹本人也
+在X（原推特）上表示，劇場版的打鬥戲比起漫畫裡足足有五倍以上之多，簡
+直打鬥吃到飽！ 
+看點三：主題曲超豪華！竟然是米津玄師＆宇多田光夢幻聯動！ 
+日本音樂鬼才 米津玄師，多次為動畫創作主題曲，舉凡知名的作品有《三月的
+獅子》《我的英雄學院》等，甚至還有宮崎駿的動畫電影《蒼鷺與少年》！而在
+《鏈鋸人》動畫TV 版第一季就已經為其創作《KICK BACK》片頭主題曲，當時
+米津玄師曾說這是一首「像雲霄飛車的歌曲」，歌詞內容「幸せになりたい」
+「楽して生きていたい」寫得不只是淀治的心聲，更是讓觀眾與之產生共鳴！ 
+這次在「Anime Expo 2025」上，米津玄師宣布特別創作新曲〈IRIS OUT〉將作
+為動畫電影《鏈鋸人 蕾潔篇》的主題曲！又宣布〈JANE DOE〉將作為同片的
+片尾曲，並邀請宇多田光擔任演唱！相信各位讀者應該都仍在宇多田光2024
+年為《新・福音戰士劇場版：||》演唱的主題曲〈One Last Kiss〉當中意猶未
+盡，沒想到這次兩位竟然能夠在《鏈鋸人 蕾潔篇》夢幻合作！
+&quot;&quot;&quot;
+
+**Page 3**
+&quot;&quot;&quot;
+除了夢幻合作，在本作《鏈鋸人 蕾潔篇》中更有配樂大師 牛尾憲輔加入，為
+瘋狂的無限打鬥畫面加入諸多無違和的唯美平衡，尤其是竟然能讓鋼琴的古典
+美與瘋狂的電子樂MIX 出屬於最《鏈鋸人》的搖滾感，達到聽覺與視覺同步華
+麗的極致娛樂享受！
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="0" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/1</span> |
+          Pos <span id="posInfo">[724-734]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "MAPPA \u54c1\u8cea\u4fdd\u8b49", "color": "#D2E3FC", "startPos": 724, "endPos": 734, "beforeText": "\u4e0d\n\u6599\u5496\u5561\u5ef3\u3001\u6cf3\u6c60\u3001\u6d6a\u6f2b\u82b1\u706b\u22ef\u22ef\u6dc0\u6cbb\u8207\u857e\u6f54\u4e4b\u9593\u9019\u6bb5\u770b\u4f3c\u7d50\u5408\u6240\u6709\u5b8c\u7f8e\u6200\u611b\u958b\n\u7aef\u5143\u7d20\u7684\u6200\u60c5\uff0c\u4e8b\u5be6\u4e0a\u537b\u662f\u6975\u5176\u6b98\u9177\u7684\u590f\u65e5\u760b\u72c2\u6200\u66f2\u3002 \n\u300a\u93c8\u92f8\u4eba \u857e\u6f54\u7bc7\u300b\u516d\u5927\u770b\u9ede\uff1a \n\u63a8\u85a6\u7d66\u60f3\u8981\u5165\u5751\u300a\u93c8\u92f8\u4eba\u300b\u7684\u8b80\u8005\uff0c\u4e00\u6b21\u611f\u53d7\u300a\u93c8\u92f8\u4eba \u857e\u6f54\u7bc7\u300b\u7a76\u7adf\u5728\u706b\u7d05\u4ec0\n\u9ebc\uff1f\u70ba\u4ec0\u9ebc\u80fd\u5920\u4e2d\u65b7\u300a\u9b3c\u6ec5\u4e4b\u5203\u5287\u5834\u7248 \u7121\u9650\u57ce\u7bc7\u300b\u7684\u9738\u699c\u7d00\u9304\uff1f \n\u770b\u9ede\u4e00\uff1a", "extractionText": "MAPPA \u54c1\u8cea\u4fdd\u8b49", "afterText": " \u00d7 \u9b3c\u624d\u7de8\u5287 \u7028\u53e4\u6d69\u53f8\uff0c\u52d5\u756b\u52a0\u6232\u8aa0\u610f\u592a\u6eff\u592a\u904e\u766e\uff01 \nMAPPA \u51fa\u54c1\uff0c\u7e3d\u662f\u6709\u4e00\u5b9a\u7684\u54c1\u8cea\uff01\u773e\u591a\u77e5\u540d\u4f5c\u54c1\uff0c\u5176\u4e2d\u5373\u4fbf\u4e0d\u662f\u71b1\u8877\u7684\u52d5\u756b\n\u8ff7\uff0c\u5728\u8fd1\u5e74\u4e5f\u80fd\u77e5\u9053\u4e00\u4e8c\u7684\u4f5c\u54c1\u5305\u542b\u300a\u9032\u64ca\u7684\u5de8\u4eba\u300b\u300a\u5492\u8853\u8ff4\u6230\u300b\u7b49\u3002\u800c\u7de8\u5287 \n\u7028\u53e4\u6d69\u53f8\uff0c\u5176\u53c3\u8207\u7684\u52d5\u756b\u6b77\u53f2\u591a\u4e0d\u52dd\u6578\uff0c\u81eaMAPPA \u6a6b\u8de8\u9738\u6b0a\u793e\u90fd\u6709\u4ed6\u7684\u8eab\u5f71\u3002\n\u53c3\u8207\u4e4b\u4f5c\u54c1\u7684\u597d\u7968\u623f\u8207\u71b1\u5ea6", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">MAPPA&#x27;s production quality</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">\u54c1\u8cea\u4fdd\u8b49</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
