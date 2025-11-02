@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dm2025_lab2_exercise.egg-info/PKG-INFO
+dm2025_lab2_exercise.egg-info/SOURCES.txt
+dm2025_lab2_exercise.egg-info/dependency_links.txt
+dm2025_lab2_exercise.egg-info/requires.txt
+dm2025_lab2_exercise.egg-info/top_level.txt

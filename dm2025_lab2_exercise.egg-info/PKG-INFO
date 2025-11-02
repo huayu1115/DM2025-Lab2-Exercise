@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: dm2025-lab2-exercise
+Version: 0.1.0
+Summary: NTHU ISA5810 Data Mining - Lab 2
+Requires-Python: >=3.11,<3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.13.5
+Requires-Dist: chromadb==1.0.20
+Requires-Dist: gensim==4.3.3
+Requires-Dist: google-genai==1.33.0
+Requires-Dist: gradio==5.44.1
+Requires-Dist: jupyter==1.1.1
+Requires-Dist: keras==3.11.3
+Requires-Dist: langchain==0.3.27
+Requires-Dist: langchain-community==0.3.29
+Requires-Dist: langchain-core==0.3.75
+Requires-Dist: langchain-google-genai==2.1.10
+Requires-Dist: langextract==1.0.9
+Requires-Dist: matplotlib==3.10.6
+Requires-Dist: nltk==3.9.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: ollama==0.5.3
+Requires-Dist: pandas==2.3.2
+Requires-Dist: plotly==6.3.0
+Requires-Dist: pymupdf==1.26.4
+Requires-Dist: python-dotenv==1.1.1
+Requires-Dist: scikit-learn==1.7.1
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: tensorflow==2.20.0
+Requires-Dist: tensorflow-hub==0.16.1
+Requires-Dist: torch>=2.9.0
+Requires-Dist: umap-learn==0.5.9.post2
+Dynamic: license-file
+Dynamic: requires-python
+
+# [DM2025] Lab 2 – Introduction
+
+Hi everyone,
+
+Our Lab 2 officially accepts submissions starting on **October 20th (Monday)** so please be sure to start working on the exercises with time.
+
+The Lab tutorial video will be launched on [YouTube Channel](https://www.youtube.com/@NTHU_ISA5810_DataMining) before **October 20th**.
+
+We strongly recommend setting up the environment on your personal laptop before the lab session so that you can follow along smoothly.
+
+The documents inside the directory `instructions/` in this repository provide detailed instructions for setting up the environment required for the lab:
+
+1. General environment setup needed to start Phase 1: `instructions/environment_setup.pdf`
+2. Additional setup to start Phase 2: `instructions/gemini_setup.pdf`
+3. Optional setup to run the Ollama Notebook (Not graded): `instructions/ollama_setup.pdf`
+
+To know in detail what we expect from you to submit for the Lab 2 Assignment please check: `DM2025-Lab2-Homework.ipynb`
+
+---
+
+
